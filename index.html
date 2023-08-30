@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="viewport" content="width, initial-scaled=1.0"> -->
+     
+        <title></title>
+        <style>
+            table{
+                width: 100%;float: left;
+            }
+            table tr th{
+                width: 50%;
+                text-align: left;
+            }
+            table tr td{
+                width: 50%;
+            }
+        </style>
+    </head>    
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <fieldset>
+                <legend>Your address</legend>
+            
+                <table>
+                    <tr>
+                        <th><label for="FirstName">First Name</label></th>
+                        <td><input 
+                            type="text" 
+                            placeholder="Frist name"
+                            Id="FirstName" required
+                            />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th><label for="LastName">Last Name</label></th>
+                        <td><input type="text" placeholder="Last name"Id="LastName"required></td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="Street">Street</label></th>
+                        <td><input type="Street" placeholder="Street" id="Street"required></td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="City">City</label></th>
+                        <td><input type="City" placeholder="City" id="City"required></td>
+                    </tr>
+                    
+                </table>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional details</legend>
+                <table>
+                    <tr>
+                        <th><label for="Biography">Biography</label></th>
+                        <td><input type="text" placeholder="Biography"Id="Biography"required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="Image">Choose file</label></th>
+                        <td><input type="file" image ="Image"Id="Image"required/></td>
+                    </tr>
+                    <tr>
+                        <th><label for="Age Group">Age Group </label></th>
+                        <td><input type="number" min="0" max="9" name="age group"Id="Age group"required/></td>
+                    </tr>
+
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interest</legend>
+                <table>
+                    <tr>
+                        <th><label for="Hobbies">Hobbies</label></th>
+                        <td><select>
+                            <option value="Soccer">Soccer </option>
+                            <option value="Dancing">Dancing</option>
+                            <option value="Gardening">Gardening</option>
+                            <option value="Watching movies">Watiching movies</option>
+                        </select></td>
+                    </tr>
+                
+                    <tr>
+                        <th><label for="Favorite car">Favourite car</label></th>
+                        <td><select>
+                            <option value="Tesla"> Tesla</option> 
+                            <option value="volvo">Volvo</option>
+                            <option value="Benz">Benz</option>
+                
+                        </select></td>
+                    </tr>
+                    
+                    <tr>
+                        <th><label for="Favourite public transport">favourite public transport</label></th>
+                        <td><input type="text" placeholder="Favourite public transport"Id="favourite public transport"/></td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <input type="Submit" value="Submit"/>
+
+        </main>     
+    </body>
+</html>
